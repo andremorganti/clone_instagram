@@ -11,7 +11,7 @@ export class PostProvider {
   constructor(private http: HttpClient, private auth: AuthProvider) {}
 
   async homePosts(){
-    const data: any = await this.http.get(`${API_URL}/api/v1/home`, { headers: this.auth.authHeader }).toPromise();
+    const data: any = await this.http.get(`${API_URL}/api/v1/home`, { headers: this.auth.authHeader() }).toPromise();
     return this.formatPost(data);
   }
 
