@@ -76,4 +76,9 @@ export class AuthProvider {
       duration: duration
     }).present();
   }
+
+  get currentUser() {
+    return this._currentUser;
+  }
+
 }
