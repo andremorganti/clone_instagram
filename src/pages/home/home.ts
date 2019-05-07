@@ -19,9 +19,5 @@ export class HomePage {
     homePosts.then(response => {
       this.posts = <Post[]>response;
     })
-<<<<<<< HEAD
-  }
-=======
   } 
->>>>>>> models2
 }
