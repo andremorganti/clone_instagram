@@ -49,4 +49,10 @@ export class PostProvider {
     return response;
   }
 
+  async remove(post) {
+    const response: any = await this.http.delete(`${API_URL}/api/v1/posts/${post.id}`, { headers: this.auth.authHeader() })
+      .toPromise();
+    return response;
+  }
+
 }
