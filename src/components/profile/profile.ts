@@ -28,4 +28,8 @@ export class ProfileComponent {
   openFollowPage() {
     this.nav.push('FollowPage', { user: this.user } );
   }
+
+  openFollowPage() {
+    this.nav.push('FollowPage', { user: this.user } );
+  }
 }
